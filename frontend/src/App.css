@@ -1,0 +1,275 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #212121
+}
+.App {
+  text-align: center;
+  background-color: #fff1f1;
+  color: #4e0d0d; 
+}
+.sidebar {
+  position: fixed;
+  top: 0; 
+  bottom: 0; 
+  width: 8%;
+  background:#181818;
+  padding: 15px;
+  transition: all 1s;
+  left: -100%; 
+  z-index: 1000;
+ 
+}
+.sidebar.active {
+  left: 0; 
+}
+ul{
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+}
+ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 100%;
+ 
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+ul li a:hover,
+ul li a.ctive {
+  background: #ffa24b;
+}
+.main{
+
+  width: 75%;
+  Height: 150%; 
+  background: #181818;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 17%;
+}
+.DataChart{
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  width: 140px; 
+  height: 10px; 
+  background: rgb(255, 13, 0); 
+  cursor: pointer; 
+  margin-top: -5px; 
+  border-radius: 40%; 
+  transition: 0.2s ease;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  -webkit-appearance: none; 
+  width: 150px;
+  height: 15px; 
+  background: rgb(237, 1, 1); 
+  cursor: pointer; 
+  margin-top: -5px; 
+  border-radius: 50%; 
+  transition: 0.2s ease;
+  
+}
+
+/*wybor daty*/
+
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  border: 1px solid #3d3d3d;
+  box-shadow: 3 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f94040;
+  background-color: #212121;
+}
+
+.react-datepicker__header {
+  background-color: #ff0000;
+  color: #ff0000;
+  border-radius: 10px 10px 0 0;
+    background-color: #212121;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  font-size: 18px;
+  font-weight: bold;
+    background-color: #212121;
+    
+}
+
+.react-datepicker__day-name,
+.react-datepicker-time__header {
+  color: #ffffff;
+  background-color: #212121;
+}
+
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #ff0000;
+  background-color: #212121;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: #212121;
+  color: #2f712e;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+.react-datepicker__day:hover {
+  background-color: #3c0909;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold;
+  background-color: #3c0909;
+}
+
+.react-datepicker__time-container {
+  width: auto;
+  background-color: #3c0909;
+}
+
+.react-datepicker__time-box {
+  width: auto;
+  background-color: #3c0909;
+}
+
+.react-datepicker__time-list {
+  padding: 8px;
+  background-color: #3c0909;
+}
+
+.react-datepicker__time-list-item {
+  padding: 4px 0;
+  background-color: #3c0909;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: #140808;
+}
+
+.react-datepicker-time__header{
+  background-color: #3c0909;
+}
+.react-datepicker{
+  background-color: #3c0909;
+}
+.react-datepicker__time-container{
+  background-color: #3c0909;
+}
+.react-datepicker__input-container input {
+  background-color: #3d3d3d;
+  border: 4px solid #181818 !important;
+  border-radius: 10px !important;
+  color: #ffffff;
+}
+
+/*wybor daty*/
+.performance {
+  width: 80%;
+  height: 350px;
+  padding: 20px;
+  margin-left: 10%; 
+  margin-top: 5%;
+  border: 1px solid #ccc;
+  background-color: #181818;
+}
+
+.performanceTables {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  height: 100%; 
+}
+
+.performanceTable {
+  width: 33.33%;
+  background-color: #212121;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; 
+  color: #ffffff; 
+}
+
+
+.performanceTable svg {
+  width: 70%;
+  height: auto;
+  margin: 0 auto; 
+}
+
+.AppsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px;
+}
+
+.AppBlock {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  border: 1px solid #3e3e3e;
+  background-color: #3e3e3e;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: flex-end;
+}
+.AppDetail{
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  color: #ffffff;
+  border: 1px solid #af9f9f;
+  background-color: #3e3e3e;
+  border-radius: 5px;
+}
+.apps-dropdown-container {
+  position: relative;
+}
+
+.apps-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px; 
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  padding: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999; 
+  max-height: 200px;
+  overflow-y: auto; 
+}
+
+.buttons-container{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 23%;
+  height: 550px;
+}
