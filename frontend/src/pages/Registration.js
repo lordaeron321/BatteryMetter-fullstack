@@ -35,7 +35,7 @@ function RegistrationForm() {
 
         if(Validate(e) == true){
     
-            let response= await fetch('http://localhost:8000/api/register/',{
+            let response= await fetch('https://battery-metter-backend.azurewebsites.net/api/register/',{
                 method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json' 

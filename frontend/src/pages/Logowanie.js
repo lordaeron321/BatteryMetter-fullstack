@@ -20,7 +20,7 @@ function Logowanie() {
             password: e.target.password.value,
         };
 
-        let response= await fetch('http://localhost:8000/api/logowanie/',{
+        let response= await fetch('https://battery-metter-backend.azurewebsites.net/api/logowanie/',{
                 method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json'
