@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -41,7 +41,8 @@ function Logowanie() {
                
                 console.log(newFormData)
                 sessionStorage.setItem('user_id', user_id);
-                console.log(sessionStorage)
+                console.log(sessionStorage.getItem('user_id'));
+                window.location.reload();
                 navigate('/home')
             }
 

@@ -73,7 +73,7 @@ const DataChart = (props) => {
 
   
   const groupedData = filteredData.reduce((acc, curr) => {
-    const measurementDate = new Date(curr.measurementDate).toISOString().split('T')[0]; // Pobranie tylko daty w formacie YYYY-MM-DD
+    const measurementDate = new Date(curr.measurementDate).toISOString().split('T')[0];
     if (!acc[measurementDate]) {
       acc[measurementDate] = { ...curr };
     } else {
