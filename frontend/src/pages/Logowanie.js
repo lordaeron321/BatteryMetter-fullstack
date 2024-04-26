@@ -42,8 +42,8 @@ function Logowanie() {
                 console.log(newFormData)
                 sessionStorage.setItem('user_id', user_id);
                 console.log(sessionStorage.getItem('user_id'));
+                navigate('/home');
                 window.location.reload();
-                navigate('/home')
             }
 
             

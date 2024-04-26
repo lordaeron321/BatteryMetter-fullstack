@@ -6,9 +6,9 @@ const Sidebar = ({ show }) => {
   const currentUser = sessionStorage.getItem('user_id');
 
   const handleLogout = () => {
-    sessionStorage.removeItem('user_id'); // Usunięcie danych użytkownika z sessionStorage
+    sessionStorage.removeItem('user_id'); 
     window.location.reload();
-    navigate('/Logowanie'); // Przeniesienie użytkownika z powrotem do strony logowania
+    navigate('/Logowanie');
   };
 
   return (
@@ -27,18 +27,19 @@ const Sidebar = ({ show }) => {
         </li>
 
         <li>
-          <Link to="/Logowanie">Logowanie</Link>
+          <Link to="/Logowanie">Log In</Link>
         </li>
         
-        {currentUser && (
-          <li>
-            <span>Zalogowany jako: {currentUser}</span>
-          </li>
-        )}
 
         {currentUser && (
           <li>
-            <button onClick={handleLogout}>Wyloguj się</button> {/* Obsługa wylogowania */}
+            <button onClick={handleLogout}>Log Out</button>
+          </li>
+        )}
+
+{currentUser && (
+          <li>
+            <span>Logged as user {currentUser}</span>
           </li>
         )}
       </ul>

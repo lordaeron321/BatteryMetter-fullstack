@@ -4,7 +4,7 @@ import RoundChart from './RoundChart'
 
 const DataDifferencial = (props) => {
   const initialData = props.appsData;
-
+  const DataRC = props.appsDataRC;
   const [data, setData] = useState(initialData);
 
 
@@ -35,7 +35,7 @@ const DataDifferencial = (props) => {
           </AreaChart>
         </ResponsiveContainer>
       </div>
-      <RoundChart key={JSON.stringify(data)} appsData={data}/>
+      <RoundChart key={JSON.stringify(DataRC)} appsData={DataRC}/>
     </div>
   );
 };

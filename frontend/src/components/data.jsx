@@ -156,7 +156,7 @@ const DataChart = (props) => {
           </div>
         </div>
       </div>
-      <DataDifferencial key={JSON.stringify(data)} appsData={data} />
+      <DataDifferencial key={JSON.stringify(chartData)} appsData={chartData} appsDataRC={data} />
     </div>
   );
 };
