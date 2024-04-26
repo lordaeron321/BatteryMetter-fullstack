@@ -7,8 +7,8 @@ const Sidebar = ({ show }) => {
 
   const handleLogout = () => {
     sessionStorage.removeItem('user_id'); 
-    window.location.reload();
     navigate('/Logowanie');
+    window.location.reload();
   };
 
   return (
