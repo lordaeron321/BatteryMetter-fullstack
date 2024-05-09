@@ -6,5 +6,4 @@ urlpatterns= [
     path('register/', register),
     path('logowanie/', logowanie),
     path('user/<int:user_id>/measurements/', user_measurements_api),
-    path('measurement/add/', add_measurement), 
 ]
