@@ -46,7 +46,6 @@ def user_measurements_api(request, user_id):
         measurements = Measurement.objects.filter(user_application__user_id=user_id)
         serializer = MeasurementSerializer(measurements, many=True)
         return Response(serializer.data)
-        
 @api_view(['POST'])
 def add_measurement(request):
     try:
