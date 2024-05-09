@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://battery-metter-backend.azurewebsites.net/api/user/5/measurements/');
+        const response = await fetch('https://battery-metter-backend.azurewebsites.net/api/user/1/measurements/');
         
         if (!response.ok) {
           throw new Error('Wystąpił problem z pobraniem danych');
