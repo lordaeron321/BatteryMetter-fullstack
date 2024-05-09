@@ -10,7 +10,7 @@ from api.commonFunctions.functions import anki, superMemo
 import datetime
 from django.utils import timezone
 from .serializers import MeasurementSerializer
-
+import json
 @api_view(['POST'])
 def register(request):
     username= request.data['username']
@@ -46,7 +46,7 @@ def user_measurements_api(request, user_id):
         measurements = Measurement.objects.filter(user_application__user_id=user_id)
         serializer = MeasurementSerializer(measurements, many=True)
         return Response(serializer.data)
-
+    
 @api_view(['POST'])
 def add_measurement(request):
     try:
@@ -67,7 +67,7 @@ def add_measurement(request):
         )
 
        
-        user_id = 1  
+        user_id = 5  
         user = get_object_or_404(User, id=user_id)
 
       
